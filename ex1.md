@@ -1,20 +1,23 @@
 # "Entering the Git World: Git 101 with a Github After-flavor"
-## Άσκηση 1η - To-Do List
+## Exercise 1 - To-Do List
 
-Περίληψη: Σε αυτή την άσκηση θα κάνουμε το πρώτο μας repository!
+Summary: In this exercise we will create our first local repository!
 
-1. Δημιουργούμε ένα φάκελο με το όνομα του project μας (πχ ex1) και μπαίνουμε σε αυτόν
-2. Ανοίγουμε το τερματικό και εκτελούμε την εντολή `git init`
-3. Δημιουργούμε ένα αρχείο μέσα στο φάκελο (πχ todolist.txt)
-4. Γράφουμε 1-3 σειρές με to-dos (πχ καθάρισμα δωματίου, ντουζ, πτυχιακή)
-5. Στο terminal πάμε και γράφουμε `git status` για να δούμε το αρχείο που έχουμε αλλάξει
-6. Στη συνέχεια γράφουμε `git add todolist.txt` ή `git add .` για να βάλουμε το αρχείο στο staging state
-7. Στο terminal γράφουμε την εντολή `git status` για να δούμε τη κατάσταση του project μας
-8. Γραφουμε την εντολή `git commit -m "morning to-dos"` για να δηλώσουμε τις αλλαγές του αρχείου στο local repository μας.
-10. Αλλάζουμε το τελευταίο task
-11. Γράφουμε την εντολή `git diff` για να δούμε τις αλλαγές του αρχείου (staging με working)
-12. Με την εντολή `git log` βλέπουμε όλα τα commits που κάναμε
-13. Για να επιστρέψουμε στο σημείο χωρίς τις αλλαγές μας από το working stage γράφουμε την εντολή `git checkout -- .`
-14. Σβήνουμε από το αρχείο ένα task και κάνουμε stage την αλλαγή μας
-15. Θέλοντας όμως να επιστρέψουμε στη προηγούμε κατάστασή μας χωρίς να κάνουμε commit, εκτελούμε την εντολή `git reset`
-16. Επιστρέφουμε στο αρχικό μας πλάνο με `git checkout -- .`
+1. Open a terminal app
+2. Create a new folder with the name *ex1* by executing `mkdir ex1`
+3. Get in that folder by executing `cd ex1`
+4. After entering in the folder we created type `git init` and click enter.
+5. Create a new file with the name todolist.txt by typing `touch todolist.txt`
+6. Without closing the terminal, find that file from Finder and open it with a text editor of your choice.
+7. Write one line to the todolist.txt (e.g. Tidy room) and click save.
+8. Go back to the terminal and write `git status` to see that your changes are being tracked by git.
+9. Stage your changes by writing `git add todolist.txt` or `git add .`
+10. Check again the status of your project by typing `git status`.
+11. Commit your changes by typing `git commit -m "morning to-do".
+12. Go back to the text editor and add one more todo in a new line (e.g. wash dishes) and click save.
+13. Go to the editor and write `git diff` to see the changes between the staging and working directories.
+14. You can use the `git log` command to see the previous commits.
+15. To discard the working changes and not stage them we can execute `git checkout -- .`.
+16. Now go back to the editor, delete the line that you added initially and stage the changes by executing `git add .`.
+17. To go back from the staged changes to what we had before we can run the command `git reset`. Now the changes are no longer in staging mode, but in working.
+18. To discard the changes and return to our starting point we can type again `git checkout -- .`
