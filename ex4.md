@@ -1,23 +1,23 @@
 # "Entering the Git World: Git 101 with a Github After-flavor"
-## Άσκηση 4η - Δημιουργία GitHub Repository
+## Exercise 4 - GitHub Repository Creation
 
-Περίληψη: Σε αυτή την άσκηση θα κάνουμε το πρώτο μας repository στο GitHub, θα δημιουργήσσυμε νέο branch, θα ανοίξουμε pull request και θα κάνουμε merge στο master.
+Summary: In this exercise we will create a new repository in github, as well as open a pull request and merge to the main branch.
 
-1. Ανοίγουμε την σελίδα του GitHub και κάνουμε είσοδο
-2. Δημιουργόυμε το πρώτο μας repository. New Repository
-3. Στο terminal γράφουμε την εντολή `git init repo-name` για να δημιουργήσουμε νέο τοπικό repository
-4. Μεταφερόμαστε στον φάκελο του repository με την εντολή `cd repo_name`
-5. Δημιουργούμε ένα νέο αρχείο και γράφουμε ότι θέλουμε
-6. Τώρα το προσθέτουμε στην staging area με την εντολή `git add file_name`
-7. Κάνουμε το πρώτο μας commit με την εντολή `git commit -m "first commit"`
-8. Στην συνέχεια θα προσθέσουμε remote origin του repository μας στο GitHub με την εντολή `git remote add origin https://....git`
-9. Και τέλος κάνουμε `push -u origin master`
-10. Με την εντολή `git remote -v` μπορούμε να δούμε τις "συνδέσεις" μας
-11. Φτιάχνουμε ένα νέο branch με το όνομα experimental
-12. Κάνουμε κάποιες αλλαγές στο αρχείο και τις κάνουμε commit.
-13. Κάνουμε `push -u origin experimental`
-14. Πάμε να δούμε το repository μας στο github
-15. Βλέπουμε τα 2 branches
-16. Κάνουμε pull request και merge
-17. Επιστρέψουμε στο master branch
-18. Κάνουμε pull για να έρθουν οι αλλαγές και τοπικά.
+1. Go to GitHub and login
+2. Click on the New repository button, choose the name of your new repository (in our case it's going to be `repo-name`) and click create.
+3. Go into your terminal and write the command `git init repo-name` to create the local repository.
+4. Get inside the folder with the command `cd repo_name`
+5. Create a new file with the command `touch repo_file.txt`
+6. Stage that file `git add file_name`
+7. Commit the changes `git commit -m "first commit"`
+8. Link the remote repository that you created with this one by running the command `git remote add origin https://....git` where the address in https:// is the address of your github repository.
+9. Push the changes to the remote repository by running `push -u origin master`
+10. With the command `git remote -v` we can see the links to the remore repositories.
+11. Create a new branch called experimental with the command `git branch experimental`
+12. Do some changes to the repo_file.txt, stage and commit them `git commit -am "some changes"`
+13. Run the command `push -u origin experimental` to push everything from this branch remotely.
+14. Go into the repository to see the changes we made.
+15. Check the two branches.
+16. Open a pull request from experimental to master.
+17. Squash and merge the changes
+18. Go back into your terminal and run the command `git pull` to update your local repository.
