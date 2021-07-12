@@ -1,12 +1,8 @@
 # "Entering the Git World: Git 101 with a Github After-flavor"
-## Άσκηση 5η - Forking & Cloning
+## Exercise 5 - Forking & Cloning
 
-1. Πηγαίνουμε στο repository του osem https://github.com/openSUSE/osem
-2. Κάνουμε click αριστερά στο κουμπί Fork και δημιουργούμε ένα αντίγραφο του repository στο λογαριασμό μας
-3. Αντιγράφουμε τη διεύθυνσή του repository
-4. Κάνουμε clone για να το κατεβάσουμε τοπικά
-5. Γράφουμε `git remote -v' για να δούμε τις απομακρυσμένες μας συνδέσεις
-6. Προσθέτουμε τη σύνδεση για το original repository του osem με την εντολή `git remote add upstream https://github.com/openSUSE/osem.git'
-7. Γράφουμε ξανά `git remote -v` και βλέπουμε ότι μπήκε και η νεά σύνδεση
-8. Κάνουμε μερικές αλλαγές σε ένα αρχείο
-9. Κάνουμε commit και push
+1. Go to https://github.com/vuejs/vue vuejs repository
+2. Click on the Fork button on the right to create a clone of the vue repository on your account
+3. Copy the link to the newly forked repository on your account.
+4. Go into your terminal and run `git clone [copied link to the repo]` with the link that you copied previously.
+5. Type `git remote -v` to see the remote links
